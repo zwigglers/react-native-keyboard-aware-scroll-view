@@ -1,5 +1,7 @@
 # react-native-keyboard-aware-scroll-view
 
+**This version is forked to support android windowSoftInputMode=neither adjustResize nor adjustPan. I encountered this with a version of expo that is supposed to be using adjustResize, but in testing does not seem to be doing so**
+
 <p>
 <img src="https://travis-ci.org/APSL/react-native-keyboard-aware-scroll-view.svg?branch=master" />
 <img src="https://img.shields.io/npm/dm/react-native-keyboard-aware-scroll-view.svg" />
@@ -115,7 +117,7 @@ First, Android natively has this feature, you can easily enable it by setting `w
 But if you want to use feature like `extraHeight`, you need to enable Android Support with the following steps:
 
 - Make sure you are using react-native `0.46` or above.
-- Set `windowSoftInputMode` to `adjustPan` in `AndroidManifest.xml`.
+~~- Set `windowSoftInputMode` to `adjustPan` in `AndroidManifest.xml`.~~
 - Set `enableOnAndroid` property to `true`.
 
 Android Support is not perfect, here is the supported list:
